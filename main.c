@@ -26,9 +26,15 @@ int main(void){
   scanf("%d",&qtdVendas);
   venda *vendas;
   vendas = (venda *)malloc(qtdVendas*sizeof(venda));
+  getchar();
   for(int i =0;i<qtdVendas;i++){
     // 
+    printf("nome do cliente: ");
+    fgets(vendas[i].c.nome,30,stdin);
+    limparEnter(vendas[i].c.nome);
+
   }
+  printf("%s",vendas[0].c.nome);
   printf("pronto");
 
 
