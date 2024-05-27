@@ -32,7 +32,7 @@ int main(void){
   printf("pronto");
 
 
-
+ free(vendas);
   return 0;
 }
 
